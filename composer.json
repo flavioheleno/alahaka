@@ -1,0 +1,51 @@
+{
+  "name": "flavioheleno/alahaka",
+  "description": "A minimal PSR-18 compliant HTTP Client",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/flavioheleno/alahaka/",
+  "authors": [
+    {
+      "name": "Flavio Heleno",
+      "email": "flaviohbatista@gmail.com",
+      "homepage": "https://flavioheleno.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Alahaka\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Alahaka\\Test\\": "tests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {},
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "require": {
+    "php": "^8.2",
+    "psr/http-client": "^1.0",
+    "psr/http-factory": "^1.0",
+    "psr/http-factory-implementation": "*",
+    "psr/http-message": "^2.0",
+    "psr/http-message-implementation": "*"
+  },
+  "require-dev": {
+    "nyholm/psr7": "^1.8",
+    "phpunit/phpunit": "^11.2",
+    "roave/security-advisories": "dev-latest"
+  },
+  "provide": {
+    "psr/http-client-implementation": "1.0"
+  },
+  "suggest": {
+    "ext-curl": "Use the curl-based driver"
+  }
+}
